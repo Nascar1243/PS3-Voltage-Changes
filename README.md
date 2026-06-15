@@ -10,3 +10,5 @@ Mullion = 0x3111 for RSX and 0x3110 for Cell
 Note: The default value is FF on retail consoles. Writing FF to these addresss will revert RSX Core to stock voltage.
 
 Note: VER-001 (Lxx and Pxx) use the Mullion voltage table, the explanation is due to the VER boards using the same vid controller as mullion boards, making the Sherwood and Mullion monikors useless.  Basically if you use a VER, only use the Mullion voltage table.
+
+Note: If you make a Frankie and you get a no code YLOD, chances are your rsx has a value on the voltage table for slims and super slims that doesn't translate to the ones on phat models. If so try writing 1v from the Mullion table as the RSX value and see if it boots.
